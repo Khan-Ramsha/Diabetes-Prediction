@@ -5,8 +5,7 @@ import numpy as np
 import pandas as pd
 import warnings
 
-application = Flask(__name__)
-app=application
+app=Flask(__name__)
 
 warnings.filterwarnings(action='ignore')
 
