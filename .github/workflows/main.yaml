@@ -26,9 +26,8 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt  # Install dependencies including Flask
 
-      - name: Deploy to Render
-
-        run: |
-          render deploy --name diabetes-prediction-app --dir \
-          --service-id ${{ secrets.RENDER_SERVICE_ID }} \
-          --api-key ${{ secrets.RENDER_API_KEY }}
+      - name: Deploy to production
+        uses: johnbeynon/render-deploy-action@v0.0.8
+        with:
+          service-id: ${{ secrets.RENDER_SERVICE_ID }}
+          api-key: ${{ secrets.RENDER_API_KEY }}
