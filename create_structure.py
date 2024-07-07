@@ -8,7 +8,7 @@ logging.basicConfig(level=logging.INFO,format='[%(asctime)s]:%(message)s:')
 
 
 list_of_files=[
-    '.github/workflows/.main.yaml',
+    '.github/workflows/main.yaml',
     'Templates/home.html',
     'Templates/results.html',
     'Model/standardScalar.pkl',
