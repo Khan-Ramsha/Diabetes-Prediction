@@ -41,19 +41,6 @@ The prediction model is trained using a Decision Tree classifier, which provided
 
 🌍 Render: For hosting the live application.
 
-### File Structure
-
-📂 diabetes-prediction-flask-app
-├── 📁 Model
-│   ├── 📝 modelForPrediction.pkl        # Trained Decision Tree model
-│   └── 📝 standardScalar.pkl            # StandardScaler for data normalization
-├── 📁 templates
-│   ├── 📝 home.html                     # HTML template for the home page
-│   └── 📝 results.html                  # HTML template for displaying results
-├── 📝 app.py                            # Main application file
-├── 📝 requirements.txt                  # Required Python packages
-└── 📝 README.md                         # Project documentation
-
 ### Installation
 
 Clone the repository:
@@ -77,11 +64,14 @@ python app.py
 ```
 Open your web browser and go to http://localhost:5000 to access the application.
 
-Deployment
+## Deployment
+
 This application is deployed using Render. You can view the live app here- https://flask-diabetes-prediction-app.onrender.com/
 
-CI/CD with GitHub Actions
+### CI/CD with GitHub Actions
+
 GitHub Actions is used to automate the build, test, and deployment process. The workflow file is defined in .github/workflows/deploy.yml.
 
-Contributing
+### Contributing
+
 Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
