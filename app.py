@@ -20,8 +20,10 @@ model = pickle.load(open("Model/modelForPrediction.pkl", "rb"))
 def predict_data():
     result=""
 
-    if request.method=='POST':
-
+    if request.method=='GET':
+        
+        return render_template('home.html')
+    else:
         Pregnancies=int(request.form.get("Pregnancies"))
         Glucose = float(request.form.get('Glucose'))
         BloodPressure = float(request.form.get('BloodPressure'))
@@ -41,8 +43,7 @@ def predict_data():
             
         return render_template('results.html',result=result)
 
-    else:
-        return render_template('home.html')
+   
 
 
 if __name__=="__main__":
