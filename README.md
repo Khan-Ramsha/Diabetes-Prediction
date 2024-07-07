@@ -70,7 +70,7 @@ This application is deployed using Render. You can view the live app here- https
 
 ### CI/CD with GitHub Actions
 
-GitHub Actions is used to automate the build, test, and deployment process. The workflow file is defined in .github/workflows/deploy.yml.
+GitHub Actions is used to automate the build, test, and deployment process. The workflow file is defined in .github/workflows/main.yaml
 
 ### Contributing
 
