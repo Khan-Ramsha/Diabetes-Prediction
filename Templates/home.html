@@ -103,8 +103,8 @@ body {
 <body>
     <div class="container">
         <h1>Enter Your Data</h1>
-        <form method="post" action="/">
-            <div class="form-group">
+        <form method="post" action="{{ url_for('predict_data')}}">
+            <div class="form-group"
                 <label for="Pregnancies">Pregnancies:</label>
                 <input type="number" id="Pregnancies" name="Pregnancies" required>
             </div>

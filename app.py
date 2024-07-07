@@ -18,7 +18,7 @@ model = pickle.load(open("Model/modelForPrediction.pkl", "rb"))
 
 ## Route for Single data point prediction
 @app.route('/',methods=['GET','POST'])
-def predict_datapoint():
+def predict_data():
     result=""
 
     if request.method=='POST':
