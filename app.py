@@ -12,9 +12,6 @@ warnings.filterwarnings(action='ignore')
 scaler=pickle.load(open("Model/standardScalar.pkl", "rb"))
 model = pickle.load(open("Model/modelForPrediction.pkl", "rb"))
 
-## Route for homepage
-
-
 ## Route for Single data point prediction
 @app.route('/',methods=['GET','POST'])
 def predict_data():
@@ -44,7 +41,5 @@ def predict_data():
         return render_template('results.html',result=result)
 
    
-
-
 if __name__=="__main__":
     app.run(host="0.0.0.0",debug=True)
